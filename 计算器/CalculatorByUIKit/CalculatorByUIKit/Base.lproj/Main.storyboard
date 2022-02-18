@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalculatorByUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="tsI-W0-tTF">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXW-DJ-M5t">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="227"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Yd-7G-Y1L">
+                                                <rect key="frame" x="255" y="159" width="25" height="48"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="1Yd-7G-Y1L" secondAttribute="trailing" constant="40" id="4WT-4Y-xxY"/>
+                                            <constraint firstAttribute="trailing" secondItem="1Yd-7G-Y1L" secondAttribute="trailing" constant="40" id="ieP-lZ-lzN"/>
+                                            <constraint firstAttribute="bottom" secondItem="1Yd-7G-Y1L" secondAttribute="bottom" constant="20" id="tBJ-4l-ZpC"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="4WT-4Y-xxY"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTv-vi-TZ8">
+                                        <rect key="frame" x="0.0" y="234" width="320" height="334"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Qv0-uB-AUo">
+                                                <rect key="frame" x="8" y="8" width="304" height="318"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jpc-6w-c6D">
+                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="64"/>
+                                                        <subviews>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HP-Qt-kRB">
+                                                                <rect key="frame" x="0.0" y="2" width="68.5" height="59.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                <color key="tintColor" systemColor="systemGray2Color"/>
+                                                                <state key="normal" title="AC">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" symbolScale="small"/>
+                                                                </state>
+                                                            </button>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPE-KA-teu">
+                                                                <rect key="frame" x="78.5" y="2" width="68.5" height="59.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                <color key="tintColor" systemColor="systemGray2Color"/>
+                                                                <state key="normal" title="±">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" symbolScale="small"/>
+                                                                </state>
+                                                            </button>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9RF-Il-gk5">
+                                                                <rect key="frame" x="157" y="2" width="68.5" height="59.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                <color key="tintColor" systemColor="systemGray2Color"/>
+                                                                <state key="normal" title="%">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" symbolScale="small"/>
+                                                                </state>
+                                                            </button>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XvL-m9-U04">
+                                                                <rect key="frame" x="235.5" y="2" width="68.5" height="59.5"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                                                <state key="normal" title="÷">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" symbolScale="small"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0fZ-Nn-Jyi">
+                                                        <rect key="frame" x="0.0" y="64" width="304" height="63.5"/>
+                                                        <subviews>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKy-mf-tHt">
+                                                                <rect key="frame" x="0.0" y="2" width="68.5" height="59"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                                                <state key="normal" title="7">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" symbolScale="small"/>
+                                                                </state>
+                                                            </button>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ran-9P-CS5">
+                                                                <rect key="frame" x="78.5" y="2" width="68.5" height="59"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                                                <state key="normal" title="8">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" symbolScale="small"/>
+                                                                </state>
+                                                            </button>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzc-Ys-NXx">
+                                                                <rect key="frame" x="157" y="2" width="68.5" height="59"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                                                <state key="normal" title="9">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" symbolScale="small"/>
+                                                                </state>
+                                                            </button>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsO-gV-iPt">
+                                                                <rect key="frame" x="235.5" y="2" width="68.5" height="59"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                                                <state key="normal" title="×">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" symbolScale="small"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SI5-U0-Gh4">
+                                                        <rect key="frame" x="0.0" y="127.5" width="304" height="63.5"/>
+                                                        <subviews>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHN-1D-kle">
+                                                                <rect key="frame" x="0.0" y="2" width="68.5" height="59"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                                                <state key="normal" title="4">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" symbolScale="small"/>
+                                                                </state>
+                                                            </button>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lgj-TK-mJU">
+                                                                <rect key="frame" x="78.5" y="2" width="68.5" height="59"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                                                <state key="normal" title="5">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" symbolScale="small"/>
+                                                                </state>
+                                                            </button>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRg-3j-jCc">
+                                                                <rect key="frame" x="157" y="2" width="68.5" height="59"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                                                <state key="normal" title="6">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" symbolScale="small"/>
+                                                                </state>
+                                                            </button>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgC-fc-FlL">
+                                                                <rect key="frame" x="235.5" y="2" width="68.5" height="59"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                                                <state key="normal" title="−">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" symbolScale="small"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="o2n-0Y-jOg">
+                                                        <rect key="frame" x="0.0" y="191" width="304" height="63.5"/>
+                                                        <subviews>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnu-hh-ACt">
+                                                                <rect key="frame" x="0.0" y="2" width="68.5" height="59"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                                                <state key="normal" title="1">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" symbolScale="small"/>
+                                                                </state>
+                                                            </button>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3C-xU-oH3">
+                                                                <rect key="frame" x="78.5" y="2" width="68.5" height="59"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                                                <state key="normal" title="2">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" symbolScale="small"/>
+                                                                </state>
+                                                            </button>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Znu-ZJ-vHb">
+                                                                <rect key="frame" x="157" y="2" width="68.5" height="59"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                                                <state key="normal" title="3">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" symbolScale="small"/>
+                                                                </state>
+                                                            </button>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOc-WS-VU0">
+                                                                <rect key="frame" x="235.5" y="2" width="68.5" height="59"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                                                <state key="normal" title="+">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" symbolScale="small"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="oAf-Ru-RkD">
+                                                        <rect key="frame" x="0.0" y="254.5" width="304" height="63.5"/>
+                                                        <subviews>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9S-ib-u4u">
+                                                                <rect key="frame" x="0.0" y="2" width="71.5" height="59"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                                                <state key="normal" title="0">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" symbolScale="small"/>
+                                                                </state>
+                                                            </button>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2L-oO-33E">
+                                                                <rect key="frame" x="77.5" y="2" width="71.5" height="59"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                                                <state key="normal" title="00">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" symbolScale="small"/>
+                                                                </state>
+                                                            </button>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9N-V8-lJ6">
+                                                                <rect key="frame" x="155" y="2" width="71.5" height="59"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                                                <state key="normal" title=".">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" symbolScale="small"/>
+                                                                </state>
+                                                            </button>
+                                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dI0-2E-Ccu">
+                                                                <rect key="frame" x="232.5" y="2" width="71.5" height="59"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                                                <state key="normal" title="=">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" systemColor="systemGreenColor"/>
+                                                                    <imageReference key="backgroundImage" image="circle.fill" catalog="system" symbolScale="small"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Qv0-uB-AUo" firstAttribute="top" secondItem="MTv-vi-TZ8" secondAttribute="topMargin" id="Bqo-ap-1ua"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Qv0-uB-AUo" secondAttribute="trailing" id="icY-Sr-Eng"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="Qv0-uB-AUo" secondAttribute="bottom" id="pPw-oo-S06"/>
+                                            <constraint firstItem="Qv0-uB-AUo" firstAttribute="leading" secondItem="MTv-vi-TZ8" secondAttribute="leadingMargin" id="za0-Yl-MPB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="lXW-DJ-M5t" firstAttribute="height" secondItem="tsI-W0-tTF" secondAttribute="height" multiplier="0.4" id="J0R-TI-95X"/>
+                                    <constraint firstAttribute="width" constant="414" id="Md0-d1-CR8"/>
+                                    <constraint firstItem="lXW-DJ-M5t" firstAttribute="height" secondItem="tsI-W0-tTF" secondAttribute="height" multiplier="0.327009" id="aXI-zF-gi2"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Md0-d1-CR8"/>
+                                        <exclude reference="aXI-zF-gi2"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tsI-W0-tTF" secondAttribute="trailing" id="61C-E6-yQP"/>
+                            <constraint firstItem="tsI-W0-tTF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="95Q-vk-h7w"/>
+                            <constraint firstAttribute="trailing" secondItem="tsI-W0-tTF" secondAttribute="trailing" id="ICR-rt-UIR"/>
+                            <constraint firstItem="tsI-W0-tTF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ct4-aB-5tY"/>
+                            <constraint firstItem="tsI-W0-tTF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lR4-k8-lOR"/>
+                            <constraint firstItem="tsI-W0-tTF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="m7K-IZ-H7a"/>
+                            <constraint firstAttribute="bottom" secondItem="tsI-W0-tTF" secondAttribute="bottom" id="sLQ-gb-ry4"/>
+                            <constraint firstAttribute="bottom" secondItem="tsI-W0-tTF" secondAttribute="bottom" id="w47-bV-uyf"/>
+                            <constraint firstItem="tsI-W0-tTF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xR0-VK-B6C"/>
+                            <constraint firstItem="tsI-W0-tTF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zJM-Vl-3Nk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-282.60869565217394" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
