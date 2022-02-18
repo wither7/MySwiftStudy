@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="19F96" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="RunRecord" representedClassName="RunRecord" syncable="YES" codeGenerationType="class">
+        <attribute name="runningDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="runningDistance" optional="YES" attributeType="String"/>
+        <attribute name="runningPace" optional="YES" attributeType="String"/>
+        <attribute name="runningTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="UserSetting" representedClassName="UserSetting" syncable="YES" codeGenerationType="class">
+        <attribute name="color" optional="YES" attributeType="String"/>
+        <attribute name="deleteEnabed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="drawingMap" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="usingBestLocation" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="usingPace" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="RunRecord" positionX="-54" positionY="-9" width="128" height="103"/>
+        <element name="UserSetting" positionX="-54" positionY="18" width="128" height="118"/>
+    </elements>
+</model>
